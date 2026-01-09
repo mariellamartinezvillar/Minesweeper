@@ -31,8 +31,7 @@ def test_bot(helper_board, game_board):
     if count_total(private_board, '?') == 0 and \
        count_total(private_board, '⚑') == total_mines:
         #IMPORTANT: in play(), we do not need all mines to be flagged to win,
-        #but we do when testing the bot,
-        #so you will need to modify this condition for play()
+        #but we do when testing the bot
         print('Congratulations! You won!')
     else:
         print('Bad Bot :(')
